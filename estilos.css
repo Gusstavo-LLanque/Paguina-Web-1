@@ -55,13 +55,13 @@ font-family: 'Nunito', sans-serif; */
 
  /* carrucel-de-imagenes */
 .container-img {
-  border: 2px solid #fff ;
+  border-top: 2px solid #fff ;
   display: flex;
   justify-content: center;
 }
 
  .carrusel-img {
-    position: absolute;  
+     
  }
 
 .img {
@@ -77,4 +77,23 @@ font-family: 'Nunito', sans-serif; */
 
  .img:hover {
   transform: scale(1.1);
+ }
+
+.container-h1-p {
+  display: flex;
+  justify-content: center;
+}
+
+ .bienvenida {
+  text-align: center;
+  font-size: 25px;
+  color: papayawhip;
+  padding: 15px;
+ }
+
+ .parrafo-bienvenida {
+  color: #fff;
+  width: 500px;
+  height: 400px;
+  text-align: center;
  }
