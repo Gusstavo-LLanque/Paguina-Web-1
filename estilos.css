@@ -1,60 +1,80 @@
-body {
+/* font-family: 'Kanit', sans-serif;
+font-family: 'Nunito', sans-serif; */
+* {
+    box-sizing: border-box;
     margin: 0%;
+    padding: 0%;
+    font-size: 20px;
 }
-head {
-    display: none;
-}
+ body {
+    background: rgba(47,47,47,0.98);
+ }
 
-nav {
-    height: 170px;
+ .header {
+    /* background: rgba(47,47,47,0.98); */
     display: flex;
-    justify-content: center;
-    background-color: #617A55;
-    font-family: 'Roboto', sans-serif;
-}
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 5%;
+ }
 
-.title {
-    position: relative;
-    top: 25px;
-    font-size: 45px;
-}
+ .menu {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    list-style: none;
+ }
 
-#logo {
-    width: 250px;
-    height: 100%;
-}
+ .menu li {
+    display: inline-block;
+    padding: 0 20px;
+ }
 
-.container-principal {
-    display: flex;
-}
-
-.contenido-izquierda {
-    border: solid black;
-}
-
-
-.contenido-center {
-    width: 700px;
-    height: 400px;
-    border: solid black;
-    border-radius: 12px;
-
-
-}
-.parrafo {
-    font-family: 'Oswald', sans-serif;
-    padding: 0px 8px 0px 8px;
-    font-size: 22px;
-    text-align: center;
+ .menu li:hover {
+    transform: scale(1.1);
+ }
  
+ .menu li a:hover {
+    color: black;
+ }
+
+ .menu a {
+    font-size: 16px;
+    color: rgba(255,255,255,0.85);;
+    font-size: 700;
+    text-decoration: none;
+ }
+ .header .title { 
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 25px;
+ }
+ 
+ .header .title:hover{
+    transform: scale(1.2);
+ }
+
+ /* carrucel-de-imagenes */
+.container-img {
+  border: 2px solid #fff ;
+  display: flex;
+  justify-content: center;
 }
 
-.introduccion {
-    text-align: center;
-    font-family: 'Kanit', sans-serif;
-    font-size: 30px;
-}
+ .carrusel-img {
+    position: absolute;  
+ }
 
-.contenido-derecha {
-    border: solid black;
-}
+.img {
+  background-color: #fff;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 10px;
+  margin-top: 20px;
+  width: 350px;
+  height: 370px;
+  transition: all 0.2s;
+ }
+
+ .img:hover {
+  transform: scale(1.1);
+ }
